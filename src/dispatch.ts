@@ -12,7 +12,7 @@ export const PICKUP_LEAD_MINUTES = 15;
 
 export function toDeliveryTask(order: Order, cashOnDelivery: boolean): DeliveryTask {
   const placedAt = Date.parse(order.createdAt);
-  const dropoffBy = new Date(placedAt + order.etaMinutes * 60_000);
+  const dropoffBy = new Date(placedAt + order.etaSeconds * 1000);
   const pickupBy = new Date(dropoffBy.getTime() - PICKUP_LEAD_MINUTES * 60_000);
 
   return {
