@@ -12,7 +12,7 @@ export interface Order {
   deliveryFeeCents: number;
   tipCents: number;
   totalCents: number;
-  etaMinutes: number;
+  etaSeconds: number;
   createdAt: string;
 }
 
