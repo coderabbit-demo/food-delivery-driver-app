@@ -6,7 +6,7 @@ Driver app client for [food-delivery-api](https://github.com/coderabbit-demo/foo
 
 | Field | Used in | For |
 | --- | --- | --- |
-| `etaMinutes` | `src/dispatch.ts` | Drop-off deadline (`createdAt` + `etaMinutes`) and pickup time |
+| `etaSeconds` | `src/dispatch.ts` | Drop-off deadline (`createdAt` + `etaSeconds`) and pickup time |
 | `totalCents` | `src/dispatch.ts` | Cash-on-delivery amount |
 | `createdAt` | `src/dispatch.ts` | Start of the delivery window |
 
