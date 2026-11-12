@@ -12,6 +12,10 @@ Driver app client for [food-delivery-api](https://github.com/coderabbit-demo/foo
 
 Renaming or removing any of these in food-delivery-api breaks dispatch.
 
+## Local development
+
+Pass the API's address as `baseUrl` in `ClientOptions`, for example `http://localhost:3000` for a local food-delivery-api server.
+
 ## Check it
 
 ```bash
